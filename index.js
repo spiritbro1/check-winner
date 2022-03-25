@@ -32,9 +32,9 @@ async function sendMessage2(message){
     
     // Create a bot that uses 'polling' to fetch new updates
     const bot = new TelegramBot(token, { polling: false });
-    //441590014
+   
     bot.sendMessage(process.env.bot2, message);
-    // return bot.stopPolling() 
+
 }
 async function sendMessage(message){
     
@@ -44,7 +44,7 @@ async function sendMessage(message){
     
     // Create a bot that uses 'polling' to fetch new updates
     const bot = new TelegramBot(token, { polling: false });
-    //441590014
+
     bot.sendMessage(process.env.bot, message);
     // return bot.stopPolling() 
 }
