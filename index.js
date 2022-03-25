@@ -11,9 +11,9 @@ require('dotenv').config();
   console.log(name)
   if(name.toLowerCase()!=="view projects"){
 //       await sendMessage("test")
-    await sendMessage("WINNER ANNOUNCEMENT READY https://metabuild.devpost.com/")
+    await sendMessage("WINNER ANNOUNCEMENT READY https://metabuild.devpost.com/ \n button text: "+name)
   }else{
-    await sendMessage2("waiting for the winner \n button text: "+name)
+    await sendMessage2("(this is a silent message which mean you still got notification but no sound just to make sure my bot works as expected) waiting for the winner \n button text: "+name)
   }
   
   await browser.close()
@@ -33,7 +33,7 @@ async function sendMessage2(message){
     // Create a bot that uses 'polling' to fetch new updates
     const bot = new TelegramBot(token, { polling: false });
    
-    bot.sendMessage(process.env.bot2, message,{disable_notification:true});
+    bot.sendMessage(process.env.bot, message,{disable_notification:true});
 
 }
 async function sendMessage(message){
