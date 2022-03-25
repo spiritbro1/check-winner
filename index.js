@@ -12,15 +12,30 @@ require('dotenv').config();
   if(name.toLowerCase()!=="view projects"){
 //       await sendMessage("test")
     await sendMessage("WINNER ANNOUNCEMENT READY https://metabuild.devpost.com/")
+  }else{
+    await sendMessage2("waiting for the winner \n button text: "+name)
   }
   
   await browser.close()
     }catch(e){
-await sendMessage("there is an error "+e.message)
+        console.log(e.message)
+await sendMessage("there is an error ")
     }
   
 })()
 
+async function sendMessage2(message){
+    
+
+    // replace the value below with the Telegram token you receive from @BotFather
+    const token = process.env.token;
+    
+    // Create a bot that uses 'polling' to fetch new updates
+    const bot = new TelegramBot(token, { polling: false });
+    //441590014
+    bot.sendMessage(process.env.bot2, message);
+    // return bot.stopPolling() 
+}
 async function sendMessage(message){
     
 
