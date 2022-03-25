@@ -13,7 +13,7 @@ require('dotenv').config();
 //       await sendMessage("test")
     await sendMessage("WINNER ANNOUNCEMENT READY https://metabuild.devpost.com/ \n button text: "+name)
   }else{
-    await sendMessage2("(this is a silent message which mean you still got notification but no sound just to make sure my bot works as expected) waiting for the winner \n button text: "+name)
+    await sendMessage2("waiting for the winner... \n (this is a silent message which mean you still got notification but no sound just to make sure my bot works as expected) \n button text: "+name)
   }
   
   await browser.close()
