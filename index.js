@@ -9,9 +9,9 @@ require('dotenv').config();
   await page.goto('https://metabuild.devpost.com/')
   const name = await page.$eval('#secondary > a.button.radius.expand.grey.mb-3', el => el.innerText)
   console.log(name)
-  if(name.toLowerCase()!=="view projects"){
-//       await sendMessage("copi")
-    await sendMessage("WINNER ANNOUNCEMENT READY https://metabuild.devpost.com/")
+  if(name.toLowerCase()==="view projects"){
+      await sendMessage("test")
+//     await sendMessage("WINNER ANNOUNCEMENT READY https://metabuild.devpost.com/")
   }
   
   await browser.close()
