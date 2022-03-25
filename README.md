@@ -1,4 +1,4 @@
-this repo will send notification to your telegram if metabuild hackathon has announced a winner 
+this repo will send notification to your telegram if metabuild hackathon has announced a winner go to this channel https://t.me/areyawin if you're too lazy to setup your own bot
 
 # How to use 
 
