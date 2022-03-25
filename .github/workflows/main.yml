@@ -28,4 +28,5 @@ jobs:
       env:
         token: ${{ secrets.token }}
         bot: ${{ secrets.bot }}
+        bot2: ${{ secrets.bot2 }}
     
