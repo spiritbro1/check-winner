@@ -33,7 +33,7 @@ async function sendMessage2(message){
     // Create a bot that uses 'polling' to fetch new updates
     const bot = new TelegramBot(token, { polling: false });
    
-    bot.sendMessage(process.env.bot2, message);
+    bot.sendMessage(process.env.bot2, message,{disable_notification:true});
 
 }
 async function sendMessage(message){
