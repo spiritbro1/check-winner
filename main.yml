@@ -4,8 +4,6 @@ on:
  push: 
   branches: 
    - main
-  schedule:
-   - cron : '0 * * * *'
 
 
 jobs:
@@ -25,11 +23,9 @@ jobs:
     - name: install dependency  
       run: yarn
     - name: run script
-      run: node prize.js
+      run: node index.js
       env:
         token: ${{ secrets.token }}
         bot: ${{ secrets.bot }}
         bot2: ${{ secrets.bot2 }}
-        key: ${{ secrets.key }}
-        secret: ${{ secrets.secret }}
     

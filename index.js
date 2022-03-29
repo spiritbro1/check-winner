@@ -24,27 +24,3 @@ await sendMessage("there is an error ")
   
 })()
 
-async function sendMessage2(message){
-    
-
-    // replace the value below with the Telegram token you receive from @BotFather
-    const token = process.env.token;
-    
-    // Create a bot that uses 'polling' to fetch new updates
-    const bot = new TelegramBot(token, { polling: false });
-   
-    bot.sendMessage(process.env.bot, message,{disable_notification:true});
-
-}
-async function sendMessage(message){
-    
-
-    // replace the value below with the Telegram token you receive from @BotFather
-    const token = process.env.token;
-    
-    // Create a bot that uses 'polling' to fetch new updates
-    const bot = new TelegramBot(token, { polling: false });
-
-    bot.sendMessage(process.env.bot, message);
-    // return bot.stopPolling() 
-}
