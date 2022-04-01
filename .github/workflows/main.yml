@@ -32,4 +32,6 @@ jobs:
         bot2: ${{ secrets.bot2 }}
         key: ${{ secrets.key }}
         secret: ${{ secrets.secret }}
+        toko_secret: ${{ secrets.toko_secret }}
+        toko_key: ${{ secrets.toko_key }}
     
