@@ -1,10 +1,10 @@
-name: SCHEDULE
+name: CHECK_PRIZE
 
 on: 
  push: 
   branches: 
    - main
-  schedule:
+ schedule:
    - cron : '0 * * * *'
 
 
