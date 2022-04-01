@@ -38,7 +38,7 @@ const privateRequest = async (data, endPoint, type) => {
     return response;
   }
   catch (err) {
-    console.log(err);
+    console.log(err.message);
     return err;
   }
 };
