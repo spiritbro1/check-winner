@@ -13,7 +13,7 @@ const qs = require('qs');
 const binanceConfig = {
   API_KEY: process.env.toko_key,
   API_SECRET: process.env.toko_secret,
-  HOST_URL: 'https://api.binance.com',
+  HOST_URL: 'https://www.tokocrypto.com',
 };
 
 const buildSign = (data, config) => {
@@ -32,7 +32,7 @@ const privateRequest = async (data, endPoint, type) => {
   };
 
   try {
-    console.log('URL: ', requestConfig.url);
+    
     const response = await axios(requestConfig);
     console.log(response.data);
     return response;
