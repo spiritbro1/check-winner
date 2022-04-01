@@ -13,7 +13,7 @@ const qs = require('qs');
 const binanceConfig = {
   API_KEY: process.env.toko_key,
   API_SECRET: process.env.toko_secret,
-  HOST_URL: 'https://www.tokocrypto.com',
+  HOST_URL: 'https://api.binance.com',
 };
 
 const buildSign = (data, config) => {
