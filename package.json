@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "axios": "^0.26.1",
+    "deta": "^1.1.0",
     "dotenv": "^16.0.0",
     "gate-api": "^5.23.2",
     "node-telegram-bot-api": "^0.56.0",

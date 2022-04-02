@@ -13,7 +13,7 @@ const qs = require('qs');
 const binanceConfig = {
   API_KEY: process.env.toko_key,
   API_SECRET: process.env.toko_secret,
-  HOST_URL: 'https://www.tokocrypto.com',
+  HOST_URL: 'https://tokocrypto.com',
 };
 
 const buildSign = (data, config) => {
@@ -54,7 +54,7 @@ const opts = {
 api.getTotalBalance(opts)
    .then(value => parseInt(value.body.total.amount)!==0?sendMessage("<b>PRIZE IS RELEASED!!!!</b><a href='https://akash.bigdipper.live/account/akash1xw6qvxd4lsmm8kwz8lv0gfsrzemlwnz9zcjly3'>akash1xw6qvxd4lsmm8kwz8lv0gfsrzemlwnz9zcjly3</a>"):sendMessage2("still no prize from akash team"),
          error => sendMessage2(JSON.stringify(error)));
-         privateRequest(data, '/open/v1/account/spot/asset', 'GET').then(a=>parseInt(a.data.data.free)===0&&parseInt(a.data.data.locked)===0?sendMessage2("still no prize from near team"):sendMessage("<b>PRIZE FROM NEAR IS RELEASED YEAH!!!</b>")).catch(e=>sendMessage2("error near"));
+        
          async function sendMessage2(message){
     
 
