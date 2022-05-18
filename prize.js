@@ -52,7 +52,7 @@ const opts = {
   'currency': 'USD' // string | Currency unit used to calculate the balance amount. BTC, CNY, USD and USDT are allowed. USDT is the default.
 };
 api.getTotalBalance(opts)
-   .then(value => parseInt(value.body.total.amount)!==0?sendMessage("<b>PRIZE FROM AKASH IS RELEASED!!!!</b><a href='https://akash.bigdipper.live/account/akash1xw6qvxd4lsmm8kwz8lv0gfsrzemlwnz9zcjly3'>akash1xw6qvxd4lsmm8kwz8lv0gfsrzemlwnz9zcjly3</a>"):sendMessage2("still no prize from akash team"),
+   .then(value => parseInt(value.body.total.amount)>2000?sendMessage("<b>PRIZE FROM AKASH IS RELEASED!!!!</b><a href='https://akash.bigdipper.live/account/akash1xw6qvxd4lsmm8kwz8lv0gfsrzemlwnz9zcjly3'>akash1xw6qvxd4lsmm8kwz8lv0gfsrzemlwnz9zcjly3</a>"):sendMessage2("still no prize from akash team"),
          error => sendMessage2(JSON.stringify(error)));
         
          async function sendMessage2(message){
