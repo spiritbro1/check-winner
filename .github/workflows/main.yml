@@ -1,8 +1,7 @@
 name: CHECK_PRIZE
 
 on: 
- schedule:
-    - cron: '0 */8 * * *'
+
  push: 
   branches: 
    - main
